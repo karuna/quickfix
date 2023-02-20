@@ -285,7 +285,7 @@ func TestTimeRangeIsInSameRange(t *testing.T) {
 	assert.True(t, NewUTCTimeRange(start, end).IsInSameRange(time1, time2))
 	assert.True(t, NewUTCTimeRange(start, end).IsInSameRange(time2, time1))
 
-	// time 1 is 25 hours greater (han time 2
+	// time1 is 25 hours greater than time 2
 	time1 = time.Date(2016, time.August, 11, 21, 0, 0, 0, time.UTC)
 	time2 = time.Date(2016, time.August, 10, 20, 0, 0, 0, time.UTC)
 
